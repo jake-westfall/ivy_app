@@ -6,7 +6,7 @@ shinyUI(fluidPage(
   fluidRow(
     column(1, div(a("Article", href="http://dx.doi.org/10.1371/journal.pone.0152719"))),
     column(3, div(a("Supplemental Appendix S1: Derivation of statistical properties of incremental validity", href="http://jakewestfall.org/publications/ivy_appendix.pdf"))),
-    column(2, div(a("Code for this app (using package 'shiny' in R)", href="http://jakewestfall.org/resources/ivy.zip"))),
+    column(2, div(a("Code for this app (using package 'shiny' in R)", href="https://github.com/jake-westfall/ivy_app"))),
     column(2, div(a("Back to JakeWestfall.org", href="http://jakewestfall.org")))
   ),
   helpText("Note: when sharing the link to this app, please use the stable redirecting page at",
