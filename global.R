@@ -80,9 +80,9 @@ pow <- function(rho1=NA, rho2=NA, delta=NA, rho1_p=NA,
   err <- 1 - (r["y","x1"]^2 + r["y","x2"]^2 - 2*r["y","x1"]*r["y","x2"]*r["x1","x2"])/
     (1 - r["t1","t2"]^2*alpha1*alpha2)
   # variances of b1 and b2
-  vb <- err/nu/(1 - r["x1","x2"]^2)
+  vb <- err/(n-1)/(1 - r["x1","x2"]^2)
   # cov(b1,b2)
-  covb <- err*r["x1","x2"]/n/(r["x1","x2"]^2 - 1)
+  covb <- err*r["x1","x2"]/(n-1)/(r["x1","x2"]^2 - 1)
   
   # return probability of observing significant x1 slope
   # p1: probability that x1 significant & x2 n.s.
